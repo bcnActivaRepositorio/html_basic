@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Codificación de carácteres-->
+    <meta charset="UTF-8">
+    <!-- Visualización según tamaño elemento reproduccion-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no;">
+    <!--metas content-->
+    <meta name="description" content="Creación barra navegación con HTML y CSS">
+    <meta name="author" content="Roberto Garcia Marila">
+
+    <!--emoticon pestaña-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+
+    <!--Link styles css-->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!--title-->
+    <title>Proyecto Udemy Html/Css</title>
+</head>
+
+<body>
+    <header>
+        <!--Navbar-->
+
+        <div class="container" id="barra">
+
+            <!--img src="./img/navbar/clickicon.png" alt="logo" id="logo"-->
+            <h1 id="titulo">Mi Web</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Documentaci&oacute;n </a></li>
+                    <li><a href="#">Contacta</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="listas">
+        <ol>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JS</a>
+                <ul>
+                    <li><a href="#">Vanilla</a></li>
+                    <li><a href="#">ecma6</a></li>
+                    <li><a href="#">Angular</a></li>
+                </ul>
+            </li>
+            <li><a href="#">MONGOdB</a></li>
+        </ol>
+    </div>
+
+    <!--Descripción Lorem ipsum-->
+    <div class="container" id="descripcion">
+        <p class="parrafo parrafo1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis varius purus. Praesent consectetur
+            pretium sem eu convallis. Etiam posuere, sem nec pulvinar scelerisque, arcu purus eleifend dolor, accumsan
+            ultrices erat quam ut sem. Donec cursus sollicitudin nisl, sed pellentesque mi blandit et. Suspendisse
+            potenti. Donec fringilla urna nec aliquet finibus. Cras euismod sem nibh, eleifend pharetra sem commodo sit
+            amet.
+        </p>
+        <p class="parrafo parrafo2">
+            Etiam convallis maximus tempor. Sed nunc nulla, tempor id iaculis non, ullamcorper a elit. Nunc sodales
+            velit non venenatis mattis. Morbi et interdum magna. Fusce eu euismod ante, in posuere justo. Mauris non
+            orci mauris. Nullam sem lorem, cursus ac fringilla nec, commodo vel erat. In posuere nisl in elit mollis
+            pulvinar. Ut finibus nunc sit amet porta feugiat. Phasellus posuere nibh eu scelerisque ultrices. In
+            facilisis purus maximus enim accumsan placerat.
+        </p>
+        <p class="parrafo parrafo3">
+            Pellentesque semper elit quis ipsum posuere, a fermentum nunc fermentum. Mauris quam ipsum, dictum porttitor
+            mauris eu, bibendum sollicitudin est. Phasellus rutrum nulla faucibus nunc maximus malesuada. Maecenas sit
+            amet massa nec dolor maximus molestie. Quisque facilisis in leo ac viverra. Morbi id volutpat mi. Duis
+            condimentum tempor sem eu efficitur. Nullam sollicitudin fringilla purus, aliquet semper eros euismod vel.
+            Nullam bibendum lorem id eros condimentum ultrices. Cras molestie, mauris quis semper volutpat, lectus
+            tortor luctus erat, id vestibulum mi augue eget felis. Donec semper felis sit amet mauris gravida, eu auctor
+            nunc condimentum. In hac habitasse platea dictumst. Morbi id nisi elit. Fusce hendrerit, libero varius
+            pulvinar imperdiet, quam massa hendrerit felis, vitae auctor risus turpis in dolor. Cras arcu velit,
+            consectetur sed libero in, tincidunt finibus dui.
+        </p>
+    </div>
+    <div class="container">
+        <div class="form-wrap" id="usuario">
+            <form action="">
+                <h3>Remember</h3>
+                <label >Nombre</label>
+                <input type="text" class="cajas" placeholder="Nombre">
+                <label >Usuario</label>
+                <input type="text" class="cajas" placeholder="Username">
+                <label >Mail</label>
+                <input type="email" class="cajas" placeholder="Mail">
+                <label >Password</label>
+                <input type="password" class="cajas" placeholder="Password">
+                <input type="submit" class="cajas" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+<!--     <div class="container">
+        <div class="form-wrap" id="usuario">
+            <form action="">
+                <h3>Remember</h3>
+                <input type="text" class="cajas" placeholder="Nombre">
+                <input type="text" class="cajas" placeholder="Username">
+                <input type="email" class="cajas" placeholder="Mail">
+                <input type="password" class="cajas" placeholder="Password">
+                <input type="Password" class="cajas" placeholder="Repite Password">
+                <input type="button" class="cajas" value="Enviar">
+            </form>
+        </div>
+    </div> -->
+    <footer>
+        <div class="footer">
+            <p>
+                Todos los derechos reservados &copy; <a href="https://theclick36.com">The click36</a>
+            </p>
+            <p id="acaba"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

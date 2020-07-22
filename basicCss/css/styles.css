@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 110%;
+  color: #333;
+  background-color: whitesmoke;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+header{
+  background-color: #55d6aa;
+}
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.listas{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.listas > ol{
+  list-style: none;
+}
+.listas > ol > li{
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+.listas > ol > li > a:hover{
+cursor: pointer;
+color: black;
+}
+.listas  a{
+  text-decoration: none;
+  color: #333;
+}
+.listas > ol > li > ul :first-child{
+  list-style: none;
+}
+.listas > ol > li > ul :last-child{
+  list-style: none;
+}
+.listas > ol > li > ul:nth-child(2){
+  color: saddlebrown;
+}
+.listas ul > li> a{
+  color: rgb(34, 54, 54);
+  text-transform: lowercase;
+}
+.listas ul > li > a:hover{
+  cursor: grab;
+  color: black;
+  text-transform: capitalize;
+}
+
+.parrafo1, .parrafo3{
+  font-style: italic;
+  font-weight: 600;
+}
+#usuario form{
+  border: 1px solid #333;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  margin: 2rem 0 2rem 0;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+#usuario form *{
+  display: block;
+}
+input[type="text"]{
+  margin-bottom: 2rem;
+  padding: 0.5em;
+  width:10em;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+footer{
+  margin: 0 auto;
+  width: 80%;
+}
+.footer{
+  margin: 2rem 0;
+}
+.footer a{
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+}
+.footer a:hover{
+color: black;
+}
+
+#acaba{
+  clear: right;
+}
+
+/* #logo{
+  float: left;
+  width: 4rem;
+  height: auto;
+  padding: 0.7rem 0;
+} */
+#titulo{
+float: left;
+cursor: pointer;
+
+}
+#titulo:hover{
+  color: black;
+}
+nav{
+  float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li{
+  display: inline-block;
+  margin-left: 2rem ;
+  padding-top: 2rem;
+
+  position: relative;
+}
+nav a{
+color: #333;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: 600;
+}
+
+nav a:hover{
+  color: black;
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%;
+  top: 0;
+  background-color:#444;
+  position: absolute;
+  transition:all ease-in-out 300ms ;
+  -webkit-transition:all ease-in-out 300ms ;
+  -moz-transition:all ease-in-out 300ms ;
+  -ms-transition:all ease-in-out 300ms ;
+  -o-transition:all ease-in-out 300ms ;
+}
+nav a:hover::before{
+  width: 100%;
+}
