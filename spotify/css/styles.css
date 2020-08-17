@@ -1,0 +1,276 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+*{
+    font-family: "Lato", Verdana, Circular, Geneva, Tahoma, sans-serif;
+}
+body{
+    margin: 0;
+    /*background: url(../img/hero-burst.svg) no-repeat center center fixed ;*/
+    background: linear-gradient(#F037A5 -60%, #FAE62D 140%);
+    background-size: cover;
+    font-size: 85%;
+
+}
+
+.wrap{
+
+    background: #F037A5;  
+    background: linear-gradient(#F037A5 -60%, #FAE62D 140%);
+    background: url(../img/hero-burst.svg) no-repeat center center ;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    width: 85%;
+    
+}
+
+
+header{
+    background-color: black;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo img{
+    width: 8rem;
+    height: auto;
+    float: left;
+   /* padding: 1rem 0;*/
+    margin: 1.5rem 0 auto;
+}
+
+nav{
+    float: right;
+}
+
+nav  ul{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li{
+
+    display: inline-block;
+    margin-left: 2rem;
+    padding: 2rem  0;
+
+}
+
+ a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 120%;
+    font-weight: 700;
+
+}
+
+ a:hover {
+color: #1ed760;
+transition-duration: .3s;
+
+}
+
+nav ul li span{
+    font-size: 140%;
+    color: whitesmoke;
+    font-weight:bolder;
+
+}
+
+section{
+    color: white;
+    margin: 0 auto;
+}
+
+article{
+    margin: 0 auto;
+    padding: 10rem 0rem;
+    text-align: center;
+}
+
+article h1{
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.15;
+    margin:  0  0 1rem 0;
+}
+
+article h4{
+    font-size: 140%;
+    font-weight: bold;
+    margin: .5rem 0 1em auto;
+}
+#boton{
+    width: 15rem;
+    height: 2rem;
+    display: inline-block;
+    background-color: #1ed760;
+    border: none;
+    line-height: 16px;
+    letter-spacing: 1.14px;
+    padding: 1rem 0 0 0;
+    border-radius:  50px;
+    -webkit-border-radius:  50px;
+    -moz-border-radius:  50px;
+    -ms-border-radius:  50px;
+    -o-border-radius:  50px;
+}
+
+#boton:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition-duration: .5s ;
+}
+
+#boton a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 auto;
+    
+}
+footer{
+    background-color: black ;
+    padding: 5rem 0;
+    height: auto;
+    box-sizing: border-box;
+    color: white;
+}
+
+.container3{
+
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+}
+.pieWeb{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 400;
+    font-weight: thin;
+    margin: 0 0 3rem 0;
+}
+.logoFooter a img{
+    width: 8rem;
+    height: auto;
+}
+.enlaces{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    
+}
+.enlaces a{
+    font-size: 100%;
+}
+dt{
+    color: grey;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 93%;
+    margin: 1.3rem 0;
+    
+}
+dl{
+    margin: 0 0 0 2rem;
+    text-align: left;
+    
+}
+dd{
+    margin: 0;
+    line-height: 1.5;
+    padding: 0 0 1rem 0;
+    width: 165px;
+    font-size: 110%;
+    font-weight: 400;
+}
+
+.socialMedia{
+    margin: 0 0 0 10rem;
+}
+
+.socialMedia ul{
+
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+.socialMedia ul li{
+
+margin: 0 0 0 3rem;
+
+}
+.pais{
+    display: flex;
+    justify-content: flex-end;
+}
+.pais a{
+    text-decoration: none;
+    color: grey;
+
+}
+.pais img{
+    margin: 0 0 0 1rem;
+    height: 18px;
+    max-width: 100%;
+}
+.sameLine{
+    display: flex;
+    flex-direction: row;
+}
+.legal ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+.legal ul li{
+    margin: 0 1.5rem 0 0;
+}
+.legal ul li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 85%;
+    
+}
+.container4{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: 0 0 0 40%;
+    padding: 0.7rem 0 0 0;
+}
+
+small{
+    display: flex;
+
+    color: grey;
+    text-align: center;
+   
+}
+small a{
+
+    text-decoration: none;
+    color: grey;
+}
+@media all and (max-width: 600px){
+
+    *{
+        flex-direction: column;
+    }
+}
