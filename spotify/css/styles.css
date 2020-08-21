@@ -273,29 +273,15 @@ small a{
     }
 }
 
-@media  all
-and (max-device-width: 845px){
+@media  all and (max-width: 990px){
 
-    .logo{
-        display: none;
-    }
-
-}
-
-@media all and (max-width: 768px){
-
-    *{
-        flex-direction: column;
-    }
-    .logo{
-        display: none;
-    }
     header{
-        height: 5rem;
+        height: 5.5rem;
     }
-    /*Burger menu*/
 
-    #menu li span{
+      /*Burger menu*/
+
+      #menu li span{
 
         display: none;
     }
@@ -305,7 +291,7 @@ and (max-device-width: 845px){
     position: relative;
     top:30px;
     bottom: 50px;
-    /* right: 520px; */
+    right: 0;
 
     z-index: 2;
 
@@ -388,25 +374,31 @@ and (max-device-width: 845px){
   #menu
   {
     position: absolute;
-    width: 200px;
+    width: 400px;
     height: max-content;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
-    
     background: black;
     list-style-type: none;
-    -webkit-font-smoothing: antialiased;  
+    -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    
+    transform: translate(100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  }
+    -webkit-transform: translate(100%, 0);
+    -moz-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    -o-transform: translate(100%, 0);
+    -webkit-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    -moz-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    -ms-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    -o-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
   
   #menu li
   {
     padding: 10px 0;
-    font-size: 100%;
+    font-size: 180%;
   }
  #menu li a:hover {
     color: #1ed760;
@@ -421,5 +413,18 @@ ayuda tutorial
  {
    transform: none;
  }
+
+
+}
+
+@media all and (max-width: 768px){
+
+    *{
+        flex-direction: column;
+    }
+    .enlaces{
+        flex-direction: column;
+    }
+  
   
 }
