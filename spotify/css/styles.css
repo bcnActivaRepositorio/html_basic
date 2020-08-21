@@ -40,23 +40,11 @@ header{
     position: fixed;
 }
 
-/* header::after{
-    content: "";
-    display: table;
-    clear: both;
-} */
-
 .logo img{
     width: 8rem;
     height: auto;
-    /* float: left; */
-   /* padding: 1rem 0;*/
     margin: 1.5rem 0 auto;
 }
-
-/* nav{
-    float: right;
-} */
 
 nav  ul{
     margin: 0 auto;
@@ -162,14 +150,14 @@ footer{
 
 .container3{
 
-    display: block;
+    display:block;
     margin: 0 auto;
     width: 85%;
 }
 .pieWeb{
     display: flex;
     justify-content: space-between;
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
     font-size: 400;
     font-weight: thin;
     margin: 0 0 3rem 0;
@@ -210,10 +198,6 @@ dd{
     font-weight: 400;
 }
 
-.socialMedia{
-    margin: 0 0 0 10rem;
-}
-
 .socialMedia ul{
 
     display: flex;
@@ -242,10 +226,11 @@ margin: 0 0 0 3rem;
 .sameLine{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .legal ul{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: row;
     list-style: none;
     padding: 0;
@@ -263,7 +248,6 @@ margin: 0 0 0 3rem;
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    margin: 0 0 0 40%;
     padding: 0.7rem 0 0 0;
 }
 
@@ -278,9 +262,16 @@ small a{
 
     text-decoration: none;
     color: grey;
+    margin: 0 0 0 1em;
 }
 
+@media all and (max-width:1199px){
 
+    footer{
+        width: 100%;
+        flex-direction: column;
+    }
+}
 
 @media  all
 and (max-device-width: 845px){
@@ -415,7 +406,7 @@ and (max-device-width: 845px){
   #menu li
   {
     padding: 10px 0;
-    font-size: 18px;
+    font-size: 100%;
   }
  #menu li a:hover {
     color: #1ed760;
