@@ -27,6 +27,9 @@
     <!--css hoy no toca-->
     <link rel="stylesheet" href="./css/styles.css">
 
+    <!--Font awesome-->
+    <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg="nest"></script>
+
 
 
 </head>
@@ -36,8 +39,7 @@
         <a class="logo" href="#">logo</a>
         <h1>Things we do for love</h1>
 
-    </header>
-    <!--barra navegación-->
+         <!--barra navegación-->
     <nav class="navbar">
         <ul>
             <li class="navegacion"><a href="#">Links</a></li>
@@ -47,7 +49,11 @@
         </ul>
     </nav>
 
+    </header>
+   
+
     <main>
+        <div class="container">
         <div class="titulo">
             <h2>Things we still doing for love</h2>
             <a href="https://www.silocreativo.com/en/web-design-html5-structure-composition/" target="_blank">
@@ -91,6 +97,107 @@
                 </p>
             </section>
 
+            <!--Tabla HTML. Lautiliza alguien?-->
+            <table class="tablaHtml" border="1">
+                <caption>Productos</caption>
+
+                <thead>
+                    <!--Encabezado Tabla-->
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Unidades</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!--Main tabla-->
+                    <tr>
+                        <td>Refresco</td>
+                        <td>9.95</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Cervezas</td>
+                        <td>12.95</td>
+                        <td>140</td>
+                    </tr>
+                    <tr>
+                        <td>Aguas</td>
+                        <td>2.95</td>
+                        <td>200</td>
+                    </tr>
+                </tbody>
+                    
+                <!--Footer tabla-->
+                <tfoot>
+                    <tr>
+                        
+                        <td  colspan="2"></td>
+                        <td class="resultadoFinal">460</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <!--cierre tabla-->
+            <br>
+            <!--Nueva tabla-->
+            <table border="1">
+                <caption>Combinaci&oacute;n de celdas sin CSS</caption>
+                <tr>
+                    <td>Clase A</td>
+                    <td>Clase B</td>
+                    <td>Clase C</td>
+                </tr>
+                <tr>
+                    <td colspan="2">X File</td>
+                    <td rowspan="2">Y File</td>
+                    
+                </tr>
+                <tr>
+                    <td>Number One</td>
+                    <td>Number Two</td>
+                    
+                </tr>
+            </table>
+            <!--Cierre tabla-->
+            <br>
+            <!--Tabla-->
+            <table class="names">
+                <colgroup>
+                    <col style="width:40%; background-color:aqua">
+                    <col style="width:35%">
+                    <col style="width:25%">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>First Name:</th>
+                    <th>Last Name:</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Robert</td>
+                    <td>Garcia</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>Martinez</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Wick</td>
+                    <td>Male</td>
+                </tr>
+            </tbody>
+
+            </table>
+            <!--Cierre tabla-->
+
+           
+
         </article>
         <!--Fin contenido main-->
         <!--Lateral-->
@@ -99,10 +206,64 @@
             <form class="search" role="search">
                 <label for="buscador">
                     Search
-                    <input type="search" name="buscador" id="buscador">
+                    <input type="search" name="buscador" id="buscador" >
                 </label>
                 <button type="submit">Submit</button>
             </form>
+             <!--FORM-->
+             <form action="#" class="formulario" method="POST" autocomplete="off">
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required maxlength="20" placeholder="Nombre" autofocus/>
+                </p>
+                <p>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" required maxlength="20" placeholder="Apellido"/>
+                </p>
+                <p>
+                    <label for="eMail">Mail: </label>
+                    <input type="email" name="eMail" id="eMail" />
+                </p>
+                <p>
+                    <label for="pssw">Contrase&ntilde;a:</label>
+                    <input type="password" name="pssw" id="pssw"/>
+                </p>
+                <p>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" name="fecha" id="fecha"/>
+                </p>
+                <p>
+                    <button type="submit">Enviar</button>
+                </p>
+            </form>
+            <!--FORM-->
+            <!--FORM GET-->
+            <form action="#" method="get">
+                <p>
+                    <input type="radio" name="coches" class="coche" value="seat"> Seat
+                    <br>
+                    <input type="radio" name="coches" class="coche" value="ford"> Ford
+                    <br>
+                    <input type="radio" name="coches" class="coche" value="volswagen"> Volswagen
+                    <br>
+                    <input type="radio" name="coches" class="coche" value="renault"> Renault
+                    <br>
+                    <input type="radio" name="coches" class="coche" value="citröen"> Citröen
+                </p>
+                <p>
+                    
+                </p>
+                <p>
+                    
+                </p>
+                <p>
+                    
+                </p>
+                <p>
+                    
+                </p>
+            </form>
+
             <article class="articulo">
                 <section class="seccion">
                     <p><u> Lorem ipsum dolor</u>, sit amet consectetur adipisicing elit. Quia animi explicabo cupiditate
@@ -114,10 +275,20 @@
                         voluptates molestiae facilis, deleniti minima ipsum atque aspernatur odit asperiores ducimus
                         dolor fugiat fugit necessitatibus similique sint et?</p>
                 </section>
+                <div class="seccion">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsam temporibus eligendi eaque fugit minus dolor fuga accusantium unde ut sit necessitatibus, iusto dicta earum. 
+                    Consequatur blanditiis ipsa veniam architecto omnis impedit voluptas, aliquid, iure cumque officia sit nam totam, praesentium exercitationem odit aliquam amet ex natus itaque minima! 
+                    Delectus modi accusamus sed sunt veniam sint amet reiciendis consequatur id ratione, hic, accusantium necessitatibus dolorem consectetur incidunt inventore minima maxime adipisci debitis itaque natus alias facere eos dolorum? 
+                    Cumque quam deleniti explicabo laborum sunt inventore modi doloribus accusamus, ut minus aut accusantium repellat dolorum molestiae fugit necessitatibus asperiores, ad totam a!
+                </p>
+                </div>
             </article>
 
         </aside>
         <!--Fin lateral-->
+    </div>
+    <!--Fin container-->
     </main>
 
     <!--Footer-->
@@ -134,9 +305,9 @@
         <div class="footer">
             <h3>Redes Sociales</h3>
             <ul class="social">
-                <li class="social_media"><a href="#">Social Media link</a></li>
-                <li class="social_media"><a href="#">Social Media link</a></li>
-                <li class="social_media"><a href="#">Social Media link</a></li>
+                <li class="social_media"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="social_media"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li class="social_media"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
             </ul>
 
         </div>
@@ -165,6 +336,16 @@
         https://developer.mozilla.org/en-US/docs/Web/HTML/Element#:~:text=The%20HTML%20element%20defines,of%20columns%20within%20a%20table.&text=The%20HTML%20element%20represents,columns%20of%20cells%20containing%20data.
 
         https://www.w3schools.com/html/default.asp
+
+        Tablas
+        https://www.youtube.com/watch?v=dK27jWKtJxs
+
+        child elements
+        https://stackoverflow.com/questions/26349987/how-do-i-apply-a-style-to-all-children-of-an-element
+
+        https://stackoverflow.com/questions/632100/apply-css-style-to-child-elements
+
+        
     -->
 </body>
 

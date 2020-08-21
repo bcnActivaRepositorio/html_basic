@@ -1,0 +1,18 @@
+.names{
+    width: 30rem;
+}
+.names th{
+    text-align: left;
+}
+
+.names, .names th, .names td {
+    border: 0.1rem solid #333;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+.names tbody tr:nth-child(even){
+    background-color: #fff;
+}
+.names tbody tr:nth-child(odd){
+    background-color: #ddd;
+}
