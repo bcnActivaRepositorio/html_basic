@@ -225,13 +225,13 @@ margin: 0 0 0 3rem;
 }
 .sameLine{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 .legal ul{
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-flow: row nowrap;
     list-style: none;
     padding: 0;
 }
@@ -440,7 +440,7 @@ small a{
     height: 100vh;
     position: fixed;
     top: 0;
-    
+    left: 0;
 
     background: rgba(0, 0, 0, 0.75);
 }
@@ -473,7 +473,82 @@ ayuda tutorial
   .logo img {
       width: 6rem;
   }
+
+  /*Footer*/
+
   .logoFooter a img {
       width: 6rem;
   }
+
+  .pieWeb{
+
+    margin: 0 0 10px 0;
+}
+  .socialMedia ul{
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+  }
+  .socialMedia ul li:nth-child(1){
+
+    margin: 0;
+  }
+  .sameLine{
+    flex-flow: column nowrap;
+    margin: 0 0 0 2rem;
+}
+.legal ul{
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+.legal ul li{
+
+    margin: 0 0 2em 0;
+}
+.legal ul li a{
+
+    padding: 1em 0;
+
+}
+.container4{
+    justify-content: flex-start;
+}
+.container4 a {
+    margin: 0;
+}
+
+.pais{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 0 2rem;
+}
+.pais a{
+    font-size: 95%;
+    text-align: right;
+}
+
+}
+@media all and (max-width: 450px){
+
+    #menu{
+        width: 300px;
+    }
+}
+@media all and (max-width: 350px){
+
+    #menu{
+        width: 250px;
+    }
+}
+@media all and (max-width: 300px){
+
+    #menu{
+        width: 220px;
+    }
+}
+@media all and (max-width: 280px){
+
+    #menu{
+        width: 150px;
+        padding: 0 0 0 100px;
+    }
 }
