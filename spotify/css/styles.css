@@ -45,6 +45,12 @@ header{
     height: auto;
     margin: 1.5rem 0 auto;
 }
+.logoHide img{
+    width: 8rem;
+    height: auto;
+    margin: 1.5rem 0 auto;
+    display: none;
+}
 
 nav  ul{
     margin: 0 auto;
@@ -61,23 +67,28 @@ nav ul li{
 }
 
  a {
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 120%;
+    color: whitesmoke !important;
+    text-decoration: none !important;
+    font-size: 100%;
     font-weight: 700;
 
 }
 
  a:hover {
-color: #1ed760;
+color: #1ed760 !important;
 transition-duration: .3s;
 
 }
 
-nav ul li span{
+nav ul li div{
     font-size: 140%;
     color: whitesmoke;
     font-weight:bolder;
+
+}
+nav ul li:nth-child(5){
+    display: none;
+    margin: 0;
 
 }
 
@@ -110,7 +121,7 @@ article h4{
 }
 #boton{
     width: 15rem;
-    height: 2rem;
+    height: 3rem;
     display: inline-block;
     background-color: #1ed760;
     border: none;
@@ -133,8 +144,11 @@ article h4{
 #boton a{
     text-decoration: none;
     text-transform: uppercase;
+    font-size: 80%;
     font-weight: 700;
     margin: 0 auto;
+    line-height: 16px;
+    letter-spacing: 1.4px;
     
 }
 footer{
@@ -176,11 +190,15 @@ footer{
 .enlaces a{
     font-size: 100%;
 }
+.enlaces a i{
+    font-size: 100%;
+    color: whitesmoke;
+}
 dt{
     color: grey;
     text-transform: uppercase;
-    font-weight: 900;
-    font-size: 93%;
+    font-weight: 900 !important;
+    font-size: 80%;
     margin: 1.3rem 0;
     
 }
@@ -194,7 +212,7 @@ dd{
     line-height: 1.5;
     padding: 0 0 1rem 0;
     width: 165px;
-    font-size: 110%;
+    font-size: 100%;
     font-weight: 400;
 }
 
@@ -281,10 +299,10 @@ small a{
 
       /*Burger menu*/
 
-      #menu li span{
+      /* #menu li span{
 
         display: none;
-    }
+    } */
 
 #menuToggle{
     display: block;
@@ -318,6 +336,7 @@ small a{
     height: 4px;
     margin: 0 25px 5px 0;
     position: relative;
+    
 
     background-color: #cdcdcd;
 
@@ -376,6 +395,7 @@ small a{
       opacity: 1;
     transform: rotate(-45deg) translate(0, -1px);
   }
+
   
   #menu
   {
@@ -388,6 +408,9 @@ small a{
     right: -50px;
 
     text-align: left;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
 
     /*despliege del burger elementos en columna*/
     display: flex;
@@ -423,13 +446,22 @@ small a{
     transition-duration: .3s;
     
     }
-
+ #menu :nth-child(4){
+        display: none;
+        margin: 0;
+    
+    }
 #menu :nth-child(5){
+
+    display: inline;
+    margin: 18px 0 40px 2rem;
+}
+#menu :nth-child(6){
 
     font-size: 120%;
    
 }
-#menu :nth-child(6){
+#menu :nth-child(7){
 
     font-size: 120%;
    
@@ -441,6 +473,8 @@ small a{
     position: fixed;
     top: 0;
     left: 0;
+    display: none;
+    
 
     background: rgba(0, 0, 0, 0.75);
 }
