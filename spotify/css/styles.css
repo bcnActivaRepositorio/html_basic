@@ -45,7 +45,7 @@ header{
     height: auto;
     margin: 1.5rem 0 auto;
 }
-.logoHide img{
+.logo2 img{
     width: 8rem;
     height: auto;
     margin: 1.5rem 0 auto;
@@ -186,7 +186,6 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
     
 }
 .enlaces a{
@@ -235,8 +234,13 @@ margin: 0 0 0 3rem;
 }
 .pais a{
     text-decoration: none;
-    color: grey;
+    color: grey !important;
+    font-size: 80%;
 
+}
+.pais a:hover{
+    
+    color: #1ed760 !important;
 }
 .pais img{
     margin: 0 0 0 1rem;
@@ -260,9 +264,13 @@ margin: 0 0 0 3rem;
 }
 .legal ul li a{
     text-decoration: none;
-    color: grey;
-    font-size: 85%;
+    color: grey !important;
+    font-size: 75%;
     
+}
+.legal ul li a:hover{
+
+    color: #1ed760 !important; 
 }
 .container4{
     display: flex;
@@ -492,6 +500,10 @@ ayuda tutorial
  .logo img {
     width: 7rem;
 }
+ .logo2 img {
+    width: 7rem;
+    display: initial;
+}
 .logoFooter a img {
     width: 7rem;
 }
@@ -508,6 +520,10 @@ ayuda tutorial
   
   .logo img {
       width: 6rem;
+  }
+  .logo2 img{
+      width: 6rem;
+      display: initial;
   }
 
   /*Footer*/
