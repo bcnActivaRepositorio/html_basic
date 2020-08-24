@@ -61,6 +61,7 @@ nav  ul{
 nav ul li{
 
     display: inline-block;
+    margin: 0 auto;
     margin-left: 2rem;
     padding: 2rem  0;
 
@@ -168,7 +169,8 @@ footer{
 
     display:block;
     margin: 0 auto;
-    width: 85%;
+    width: 83%;
+    padding: 0 3% 0 5px;
 }
 .pieWeb{
     display: flex;
@@ -307,6 +309,7 @@ small a{
         height: 5.5rem;
     }
 
+
       /*Burger menu*/
 
       /* #menu li span{
@@ -410,13 +413,12 @@ small a{
   #menu
   {
     position: absolute;
-    width: 400px;
+    width: 100vw;
     height: 100vh;
     margin: -100px 0 0 0;
-    padding: 100px;
+    padding: 0 0px 0 20px;
     padding-top: 125px;
-    right: -50px;
-
+    right: 0px;
     text-align: left;
 
     overflow-x: hidden;
@@ -499,8 +501,8 @@ ayuda tutorial
 
  .logo img {
     width: 7rem;
-}
- .logo2 img {
+} 
+.logo2 a img{
     width: 7rem;
     display: initial;
 }
@@ -522,10 +524,9 @@ ayuda tutorial
       width: 6rem;
   }
   .logo2 img{
-      width: 6rem;
-      display: initial;
-  }
-
+    width: 6rem;
+    display: initial;
+}
   /*Footer*/
 
   .logoFooter a img {
@@ -577,30 +578,4 @@ ayuda tutorial
     font-size: 95%;
     text-align: right;
 }
-
-}
-@media all and (max-width: 450px){
-
-    #menu{
-        width: 300px;
-    }
-}
-@media all and (max-width: 350px){
-
-    #menu{
-        width: 250px;
-    }
-}
-@media all and (max-width: 300px){
-
-    #menu{
-        width: 220px;
-    }
-}
-@media all and (max-width: 280px){
-
-    #menu{
-        width: 150px;
-        padding: 0 0 0 100px;
-    }
 }
