@@ -147,8 +147,10 @@ article h4{
     font-size: 80%;
     font-weight: 700;
     margin: 0 auto;
+    padding: 20px 20px;
     line-height: 16px;
     letter-spacing: 1.4px;
+    color: #2940a8;
     
 }
 footer{
