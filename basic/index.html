@@ -35,6 +35,7 @@
 </head>
 
 <body>
+    <div class="padre">
     <header>
         <a class="logo" href="#">logo</a>
         <h1>Things we do for love</h1>
@@ -50,7 +51,7 @@
     </nav>
 
     </header>
-   
+
 
     <main>
         <div class="container">
@@ -195,6 +196,32 @@
 
             </table>
             <!--Cierre tabla-->
+            <!--Contenido interactivo-->
+
+            <div class="contenidoInteractivo">
+                <h2>
+                    Contenido interactivo
+                </h2>
+
+                <details>
+                    <summary>Curso de HTML</summary>
+                    1. Introducci&oacute; <br>
+                    2. Elementos b&aacute;sicos <br>
+                    3. Formato de texto <br>
+                    4. Listas <br>
+                </details>
+
+                <dialog id="dialogo" >Cuadro de di&aacute;logo en HTML5</dialog>
+
+                <p>
+                    <button type="button" id="abro">Abrir</button>
+                    <button type="button" id="cierro">Cerrar</button>
+                </p>
+            </div>
+            <br>
+            <div>
+                <iframe src="" frameborder="0"></iframe>
+            </div>
 
            
 
@@ -294,6 +321,7 @@
     <!--Footer-->
     <footer>
         <!--Cuantos cajones?-->
+        <div class="filas">
         <div class="footer">
             <h3>Politica de Privacidad</h3>
             <ul class="legal">
@@ -311,13 +339,14 @@
             </ul>
 
         </div>
+    </div>
         <div class="footer">
             <div class="copyright">
                 <small>
-                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><i
-                        class="fab fa-creative-commons fa-1x"></i> Copyright</a> &copy;
-                    <script>document.write(new Date().getFullYear());</script>
-                    Designed by <a href="https://theclick36.com">theclick36.</a>
+                    Copyright &copy;
+                    <span id="dateOfToday"></span>
+                    <!-- <script>document.write(new Date().getFullYear());</script> -->
+                    Designed by<a href="https://theclick36.com">theclick36.com</a>
                   </small>
 
             </div>
@@ -347,6 +376,8 @@
 
         
     -->
+    </div>
+    <script src="./js/functions.js"></script>
 </body>
 
 </html>
